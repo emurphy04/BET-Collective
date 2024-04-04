@@ -1,4 +1,5 @@
 import items from '../ProductCard/products.json'
+import { Link } from 'react-router-dom'
 
 function Featured(){
     let isFeatured = []
@@ -23,7 +24,7 @@ function Featured(){
                                     <div className='featuredItemTitle'><h4>{item.name}</h4></div>
                                     <br /><br /><br /><br />
                                     <div className='featuredPrice'><p>{item.price}</p></div>
-                                    <button className='viewButton'>View</button>
+                                    <Link to={'/details/'+item.sku}><button className='viewButton'>View</button></Link>
                                 </div>
                             </>
                         )}

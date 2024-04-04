@@ -1,6 +1,11 @@
 function Hero(){
     return(
         <>
+            <div className="policies">
+                <div className="policyBox"><img className="policyImage" src="./images/vector/Vector.png" width={75}/><p className="policyTxt">FREE SHIPPING</p></div>
+                <div className="policyBox"><img className="policyImage" src="./images/vector/moneyback.png" width={75}/><p className="policyTxt">100% MONEY BACK</p></div>
+                <div className="policyBox"><img className="policyImage" src="./images/vector/support.png" width={75}/><p className="policyTxt">SUPPORT 24/7</p></div>
+            </div>
             <div className="hero">
                 <div className="heroImgBox">
                     <img src=".\images\travel-tech\laptop.jpg" width={575} height={566}/>
