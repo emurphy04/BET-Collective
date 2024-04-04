@@ -1,22 +1,58 @@
-import React from 'react';
-import ProductCard from '../ProductCard/card'; // Assuming you have a ProductCard component
+import items from '../ProductCard/products.json'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
+function ItemGrid(){
+  var catList = []
+  var cat = useLocation()
+  cat = cat.pathname.split('/')[2]
+  console.log(cat)
+  if (cat != 'all'){
+    for (let i = 0; i<items.length; i++){
+      if (items[i].category == cat){
+        catList.push(items[i])
+      }
+    }
+  } else {
+    for (let i = 0; i<items.length; i++){
+      catList.push(items[i])
+    }
+  }
+  
+  cat = cat.replace('-',' + ')
+  let catCap = cat.toUpperCase()
+  return(
+    <>
+      <div className='catTitle'>
+        <div className='catBox'>
+          <p><span className='prodCat'>Home</span> / {cat}</p>
+        </div>
+        <div className='titleBox'>
+          <p>{catCap}</p>
+        </div>
+      </div>
+      <div className='cardBox'>
+        <ul>
+          {catList.map((item, index) =>
+            <>
+              <div className='cardBackground'>
+                <div className='itemImg'>
+                  <img src={item.image} width={240} />
+                </div>
+                <div className='itemTitle'>
+                  <p>{item.name}</p>
+                </div>
+                <div className='itemPrice'>
+                  <p>{item.price}</p>
+                </div>
+                <Link to={'/details/'+item.sku}><button className='viewBtn'>View</button></Link>
+              </div>
+            </>
+          )}
+        </ul>
+      </div>
+    </>
+  )
+}
 
-const ProductList = ({ products, category }) => {
-  // Filter products by category
-  const filteredProducts = products.filter(product => product.category === category);
-
-  return (
-    <div>
-      {filteredProducts.length > 0 ? (
-        filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))
-      ) : (
-        <p>No products found in this category.</p>
-      )}
-    </div>
-  );
-};
-
-export default ProductList;
+export default ItemGrid

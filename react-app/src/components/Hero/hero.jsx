@@ -8,7 +8,7 @@ function Hero(){
             </div>
             <div className="hero">
                 <div className="heroImgBox">
-                    <img src=".\images\travel-tech\laptop.jpg" width={575} height={566}/>
+                    <img src=".\images\tech-travel\laptop.jpg" width={575} height={566}/>
                 </div>
                 <div className="heroTxtBox">
                     <p className="heroTxt">HOT DEALS THIS WEEK</p>

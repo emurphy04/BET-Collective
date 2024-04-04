@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Landing from "../../pages/landing";
+
 function Header(){
     return(
         <>
@@ -15,19 +18,19 @@ function Header(){
                         </div>
                     </div>
                     <div className="nav">
-                        <div className="title">The BET Collective</div>
+                        <Link to={'/'}><div className="title">The BET Collective</div></Link>
                         <div className="navBox">
-                            <p><a className="navText" href="">Shop All</a></p>
+                            <Link to={'/products/all'} className="navText"><p>Shop All</p></Link>
                             <p>&nbsp;|&nbsp;</p>
-                            <p><a className="navText" href="">Clothing</a></p>
+                            <Link to={'/products/clothing'} className="navText"><p>Clothing</p></Link>
                             <p>&nbsp;|&nbsp;</p>
-                            <p><a className="navText" href="">Accessories</a></p>
+                            <Link to={'/products/accessories'} className="navText"><p>Accessories</p></Link>
                             <p>&nbsp;|&nbsp;</p>
-                            <p><a className="navText" href="">Home + Living</a></p>
+                            <Link to={'/products/home-living'} className="navText"><p>Home + Living</p></Link>
                             <p>&nbsp;|&nbsp;</p>
-                            <p><a className="navText" href="">Tech + Travel</a></p>
+                            <Link to={'/products/tech-travel'} className="navText"><p>Tech + Travel</p></Link>
                             <p>&nbsp;|&nbsp;</p>
-                            <p><a className="navText" href="">Fun Gifts</a></p>
+                            <Link to={'/products/fun-gifts'} className="navText"><p>Fun Gifts</p></Link>
                         </div>
                         <div className="loginBox">
                             <p className="loginText"><a className="loginText" href="">Login/Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50E;&#xFE0E;</p>
