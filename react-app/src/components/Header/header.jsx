@@ -33,7 +33,7 @@ function Header(){
                             <Link to={'/products/fun-gifts'} className="navText"><p>Fun Gifts</p></Link>
                         </div>
                         <div className="loginBox">
-                            <p className="loginText"><a className="loginText" href="">Login/Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50E;&#xFE0E;</p>
+                            <Link to={'/login'}><p className="loginText"><a className="loginText" href="">Login/Register</a></p></Link>
                             
                         </div>
                     </div>

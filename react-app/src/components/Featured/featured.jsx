@@ -33,7 +33,7 @@ function Featured(){
                 <div className='rectBox'>
                     <div className='blueRect'>
                         <div className='aboutTitle'>
-                            <p>The BET <br />Collective</p>
+                            <p>The BET Collective</p>
                         </div>
                         <div className='aboutText'>
                             <p>The BET Collective Team <br />celebrates summer with <br />our collection of <br />favourites <br /><br /> Lorem ipsum dolor sit <br />amet, consectetur <br />adipiscing elit, sed do <br />eiusmod tempor <br /> incididunt ut labore et <br />dolore magna aliqua.</p>

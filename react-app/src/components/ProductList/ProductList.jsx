@@ -21,6 +21,12 @@ function ItemGrid(){
   
   cat = cat.replace('-',' + ')
   let catCap = cat.toUpperCase()
+  console.log(cat)
+
+  if (cat == 'fun + gifts'){
+    catCap = 'Fun Gifts'
+    cat = 'fun gifts'
+  }
   return(
     <>
       <div className='catTitle'>
