@@ -805,3 +805,32 @@ button:active{
   margin-bottom: 7px;
   margin-left: 12.5vw;
 }
+
+.registerSuccess{
+  margin-top: 2vh;
+  width: 25vw;
+  height: 8vh;
+  background-color: green;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 12.5vw;
+  transition: 100ms linear;
+  opacity: 1;
+}
+
+.registerInvis{
+  margin-top: 4vh;
+  width: 25vw;
+  height: 8vh;
+  color: white;
+  color: white;
+  font-family: "Poppins";
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 12.5vw;
+  opacity: 0;
+}
