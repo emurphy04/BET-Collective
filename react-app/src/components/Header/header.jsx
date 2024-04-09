@@ -1,14 +1,34 @@
 import { Link } from "react-router-dom";
-import Landing from "../../pages/landing";
+import { useState } from "react";
 
 function Header(){
+
+    const [query, setQuery] = useState('') 
+
+    const handleSearch = (event) =>{
+        setQuery(event.target.value)
+        console.log(query)
+    }
+
+    const submitSearch = () => {
+        fetch("http://localhost:3000/search/ed1f", {
+            method: 'PUT',
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(
+                {
+                    "query" : query,
+                }
+            )
+        })
+    }
+
     return(
         <>
             <header>
                 <nav className="headerContainer">
                     <div className="contactInfo">
                         <div className="contactBox">
-                            <p>&#9743; (709)555-1234</p>
+                            <p>&#9743; (709) 555-1234</p>
                         </div>
                         <div className="contactBoxEmail">
                             <p>&#9993; info@thebetcollective.com</p>
@@ -33,7 +53,8 @@ function Header(){
                             <Link to={'/products/fun-gifts'} className="navText"><p>Fun Gifts</p></Link>
                         </div>
                         <div className="loginBox">
-                            
+                            <input onChange={handleSearch} className="searchBox" type="text" placeholder="Search..."/>
+                            <Link to={'/search'}><button onClick={submitSearch} className="searchButton">&#x1F50E;&#xFE0E;</button></Link>
                         </div>
                     </div>
                 </nav>

@@ -1,6 +1,7 @@
 import items from '../ProductCard/products.json'
 import { Link } from 'react-router-dom'
 
+
 function Featured(){
     let isFeatured = []
     for (let i = 0; i<items.length; i++){
@@ -36,26 +37,27 @@ function Featured(){
                             <p>The BET Collective</p>
                         </div>
                         <div className='aboutText'>
-                            <p>The BET Collective Team <br />celebrates summer with <br />our collection of <br />favourites <br /><br /> Lorem ipsum dolor sit <br />amet, consectetur <br />adipiscing elit, sed do <br />eiusmod tempor <br /> incididunt ut labore et <br />dolore magna aliqua.</p>
-                            <button className='aboutBtn'>View All</button>
+                            <p>The BET Collective Team celebrates summer with our collection of favourites. We are a group of Softare Development students who love to create and design. We hope you enjoy our collection as much as we enjoy offering them to you.</p>
+                            <button className='aboutBtn'>Learn more</button>
                         </div>
                     </div>
                     <div className='featuredRect'>
                         <div className='rectImg'><img src="/images/home-living/beachchair1.png"/></div>
-                        <div className='rextText'><p className='rectText'>The BET Beach Towel <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$29.99</p></div>
+                        <div className='rextText'><p className='rectText'>The BET Beach Towel <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$29.99</p><button className='viewButton'>View</button></div>
                     </div>
                     <div className='featuredRect'>
                         <div className='rectImg'><img src="/images/home-living/golfball1.png"/></div>
-                        <div className='rextText'><p className='rectText'>The BET Golf Balls <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$9.99</p></div>
+                        <div className='rextText'><p className='rectText'>The BET Golf Balls <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$9.99</p><button className='viewButton'>View</button></div>
                     </div>
                     <div className='featuredRect'>
                         <div className='rectImg'><img src="/images/home-living/carplate1.png"/></div>
-                        <div className='rextText'><p className='rectText'>The BET Car Plate <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$19.99</p></div>
-                    </div>
+                        <div className='rextText'><p className='rectText'>The BET Car Plate <br /><span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span><br />$19.99</p><button className='viewButton'>View</button></div>
+                        </div>
                 </div>
             </div>
         </>
     )
 }
+
 
 export default Featured

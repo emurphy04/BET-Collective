@@ -1,6 +1,7 @@
 import items from '../ProductCard/products.json'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
+import Footer from '../Footer/footer'
 
 function ItemGrid(){
   var catList = []
@@ -57,6 +58,8 @@ function ItemGrid(){
           )}
         </ul>
       </div>
+      <br />
+      <Footer></Footer>
     </>
   )
 }
