@@ -1,0 +1,105 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /* Centers the footer content */
+    align-items: center;
+    background-color: #3A109A;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* position: bottom; */
+    width: 99.3vw;
+    padding-top: 50px;
+    margin-bottom: -10px;
+  }
+  
+  .footer {
+    display: flex;
+    width: 100%; /* Adjust if you want a different width */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #3A109A;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .logo-section {
+    flex-grow: 0; /* Prevents the logo section from growing */
+    margin-right: auto; /* Pushes everything else to the right */
+    order: -1; /* Ensures logo section always comes first */
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+    margin: 0 20px; /* Adds spacing between sections */
+  }
+  
+  .footer-section h4 {
+    font-size: 1rem;
+    margin-top: 0; /* Reset or adjust as needed */
+    margin-bottom: 10px; /* Keep consistent */
+    color: #E82D86;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+   .logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+   
+
+  
+  /* Update for all links to maintain Poppins font */
+  .navText, .navText:visited, .navText:active, .navText:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  }
+  
+  .navText:hover, .navText:active {
+    color: #07B8C3; /* Pink color on hover/active */
+  }
+  
+  .company-links ul, .shopping-links ul, .customer-support ul, .newsletter-social > div > ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  }
+  
+  /* Social Icons Adjustments */
+  .icon, .icon:visited, .icon:active, .icon:hover {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  }
+  
+  .icon:hover, .icon:active {
+    color: #07B8C3;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 625px) {
+    .footer {
+      flex-direction: column;
+      align-items:center;
+      
+    }
+  }

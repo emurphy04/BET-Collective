@@ -1,0 +1,60 @@
+{
+  "search": [
+    {
+      "query": "golf ",
+      "id": "ed1f"
+    }
+  ],
+  "cart": [
+    {
+      "id": "7804",
+      "itemSku": "TT-038",
+      "quan": 1,
+      "size": "L",
+      "color": "Black",
+      "price": "$19.99",
+      "img": "./images/travel-tech/charging-pad.jpg",
+      "name": "The BET Charging Pad"
+    },
+    {
+      "id": "01b6",
+      "itemSku": "HL-032",
+      "quan": 1,
+      "size": "L",
+      "color": "Black",
+      "price": "$9.99",
+      "img": "./images/home-living/pet-bandana.jpg",
+      "name": "The BET Pet Bandana"
+    },
+    {
+      "id": "f1b2",
+      "itemSku": "CLO-001",
+      "quan": 1,
+      "size": "L",
+      "color": "Black",
+      "price": "$39.99",
+      "img": "./images/clothing/black-sweatshirt.jpg",
+      "name": "The BET Crewneck"
+    },
+    {
+      "id": "cb1f",
+      "itemSku": "HL-021",
+      "quan": 1,
+      "size": "L",
+      "color": "Black",
+      "price": "$2.99",
+      "img": "./images/home-living/beer.jpg",
+      "name": "The BET Beer Sleeve"
+    }
+  ],
+  "checkout": [
+    {
+      "priceTot": 72.96,
+      "priceTotDisc": 7.3,
+      "shipping": 0,
+      "HST": 9.848999999999998,
+      "priceTotHST": 75.509,
+      "id": "1653"
+    }
+  ]
+}
